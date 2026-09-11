@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image 1 Layout</title>
+    <style>
+        table, th, td { 
+            border: 2px solid black; 
+            border-collapse: collapse; 
+        }
+        td {
+            text-align: center;
+            padding: 10px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <table width="80%">
+        <tr>
+            <td rowspan="2">A</td>
+            <td colspan="2">B</td>
+            <td rowspan="2">C</td>
+        </tr>
+        <tr>
+            <td rowspan="2">D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td>F</td>
+            <td colspan="2"><u>G</u></td>
+        </tr>
+        <tr>
+            <td rowspan="3">H</td>
+            <td rowspan="2" colspan="2"><u>I</u></td>
+            <td>J</td>
+        </tr>
+        <tr>
+            <td>K</td>
+        </tr>
+        <tr>
+            <td>L</td>
+            <td colspan="3">M</td>
+        </tr>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealNet - Your trusted partner in digital healthcare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+
+    :root {
+      --bs-info: #22B8CF;
+      --bs-info-rgb: 34, 184, 207;
+      --bs-primary: #0C356A;
+      --bs-primary-rgb: 12, 53, 106;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333333;
+    }
+
+    .max-w-600 {
+      max-width: 600px;
+    }
+
+    .max-w-800 {
+      max-width: 800px;
+    }
+
+    .max-w-300 {
+      max-width: 300px;
+    }
+
+    .doctor-hero-img {
+      width: 380px;
+      height: 380px;
+      object-fit: cover;
+    }
+
+    .hover-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    .form-control:focus {
+      border-color: var(--bs-info);
+      box-shadow: 0 0 0 0.25rem rgba(34, 184, 207, 0.25);
+    }
+
+    @media (max-width: 576px) {
+      .doctor-hero-img {
+        width: 260px;
+        height: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="sticky-top bg-white py-3 shadow-sm">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary fs-4" href="#">
+          <i class="fa-solid fa-heart-pulse text-info fs-3"></i> HealNet
+        </a>
+        <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#doctors">Find Doctors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+        <a href="#" class="btn btn-primary px-4 py-2 rounded-pill fw-semibold shadow-sm">Join us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section py-5 overflow-hidden">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold mb-3">Your <span class="text-info">trusted partner</span> in digital healthcare.</h1>
+          <p class="text-muted leading-relaxed mb-4">
+            <strong class="text-info">Empowering Your Health at Every Step.</strong> Experience personalized medical care from the comfort of your home. Connect with certified doctors, or manage prescriptions and schedule appointments with ease.
+          </p>
+          <a href="#booking" class="btn btn-info text-white px-4 py-3 rounded-pill fw-bold shadow-sm me-3">Book an appointment <i class="fa-solid fa-chevron-right ms-2"></i></a>
+          
+          <div class="mt-5">
+            <small class="text-muted d-block mb-3 fw-medium">Trusted by millions across the globe</small>
+            <div class="d-flex align-items-center gap-4 text-secondary fs-4 opacity-75 flex-wrap">
+              <i class="fa-brands fa-amazon"></i>
+              <i class="fa-brands fa-apple"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-spotify"></i>
+              <i class="fa-brands fa-slack"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 position-relative text-center">
+          <div class="doctor-img-wrapper position-relative d-inline-block">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=600" alt="Doctor" class="img-fluid rounded-circle border border-5 border-info shadow-lg doctor-hero-img">
+            
+            <div class="card position-absolute top-50 start-100 translate-middle p-2 px-3 shadow rounded-4 border-0 text-start d-none d-sm-block bg-white">
+              <div class="d-flex align-items-center gap-2">
+                <div class="avatar-group d-flex">
+                  <span class="badge rounded-circle bg-primary p-2">2400+</span>
+                </div>
+              </div>
+              <small class="fw-bold d-block mt-1">Happy Customers</small>
+              <div class="text-warning small"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> <span class="text-muted">(4.7 Stars)</span></div>
+            </div>
+
+            <div class="position-absolute bottom-0 start-0 translate-middle-y bg-white p-2 px-3 shadow rounded-pill d-flex align-items-center gap-2">
+              <i class="fa-solid fa-star text-primary"></i>
+              <span class="small fw-semibold">Easy Appointment Booking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="py-4">
+    <div class="container">
+      <div class="card border-info rounded-4 shadow-sm p-4 bg-light">
+        <h4 class="fw-bold text-center mb-4">Easily book an appointment in <span class="text-info">3 simple steps.</span></h4>
+        <form class="row g-3 align-items-end">
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold"><i class="fa-regular fa-envelope text-info me-1"></i> Email Address</label>
+            <input type="email" class="form-control rounded-pill" placeholder="Enter your Email Address" required>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold"><i class="fa-solid fa-phone text-info me-1"></i> Contact Number</label>
+            <input type="tel" class="form-control rounded-pill" placeholder="Type your Contact Number" required>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label small fw-semibold"><i class="fa-regular fa-calendar-check text-info me-1"></i> Date of Appointment</label>
+            <input type="date" class="form-control rounded-pill" required>
+          </div>
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-info text-white w-100 rounded-pill py-2 fw-semibold">Book Now <i class="fa-solid fa-circle-check ms-1"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-5">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2">Top <span class="text-info">services</span> we offer</h2>
+      <p class="text-muted max-w-600 mx-auto mb-5">In today's fast-paced world, your health deserves the utmost attention and convenience. That's why HealNet offers a suite of integrated services designed to cater to your healthcare needs digitally.</p>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 p-4 rounded-4 border-1 border-info shadow-sm hover-card">
+            <div class="icon-box mb-3 text-info fs-2"><i class="fa-solid fa-laptop-medical"></i></div>
+            <h5 class="fw-bold">Online Consultations</h5>
+            <p class="text-muted small">Consult with top doctors across various specialties via video or chat communication. It's totally secure, private, and convenient.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-6">
+          <div class="card h-100 p-4 rounded-4 border-1 border-info shadow-sm hover-card">
+            <div class="icon-box mb-3 text-info fs-2"><i class="fa-regular fa-calendar-plus"></i></div>
+            <h5 class="fw-bold">Booking Appointments</h5>
+            <p class="text-muted small">Choose the best time for an in-person visit with our easy-to-use scheduling system, or proceed with our online consultation features.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 rounded-4 border-0 shadow-sm hover-card bg-light">
+            <div class="icon-box mb-3 text-info fs-3"><i class="fa-solid fa-file-prescription"></i></div>
+            <h6 class="fw-bold">Prescriptions</h6>
+            <p class="text-muted small">Receive and renew prescriptions digitally after your consultation with our specialists.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 rounded-4 border-0 shadow-sm hover-card bg-light">
+            <div class="icon-box mb-3 text-info fs-3"><i class="fa-solid fa-notes-medical"></i></div>
+            <h6 class="fw-bold">Medical Notes</h6>
+            <p class="text-muted small">Obtain necessary medical notes for work or school with only a few clicks of hassle.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 rounded-4 border-0 shadow-sm hover-card bg-light">
+            <div class="icon-box mb-3 text-info fs-3"><i class="fa-solid fa-pills"></i></div>
+            <h6 class="fw-bold">Medicine Refills</h6>
+            <p class="text-muted small">Skip the pharmacy queues and save time + energy by ordering medicine refills online.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <div class="card rounded-5 border-0 shadow p-4 p-md-5 bg-white">
+        <h3 class="fw-bold text-center mb-4"><span class="text-info">HealNet's Story:</span> Get to know us</h3>
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-5">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=600" alt="Medical Team" class="img-fluid rounded-4 shadow-sm">
+          </div>
+          <div class="col-lg-7">
+            <p class="text-muted">HealNet is more than just an online medical service; it's a movement towards accessible, efficient, and compassionate healthcare for all. Founded by a team of visionary doctors, healthcare professionals, and technology experts, we are driven by the mission to deliver exceptional medical care directly to you.</p>
+            <p class="text-muted">Our platform is built on the pillars of trust, innovation, and patient-centricity, ensuring that every interaction is personalized and every treatment plan is tailored to your unique needs.</p>
+            <a href="#" class="btn btn-info text-white rounded-pill px-4 py-2 mt-2">Learn more about us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">How <span class="text-info">our platform</span> works</h2>
+        <p class="text-muted">Navigating your healthcare journey with HealNet is seamless. Just follow these steps.</p>
+      </div>
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <div class="d-flex align-items-start mb-4 gap-3">
+            <div class="badge rounded-circle bg-info text-white fs-5 p-3">1</div>
+            <div>
+              <h5 class="fw-bold">Create Your Profile</h5>
+              <p class="text-muted small">Sign up and fill in your medical history securely. Setting up your profile this way ensures you stay up-to-date with your medical processes.</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start mb-4 gap-3">
+            <div class="badge rounded-circle bg-info text-white fs-5 p-3">2</div>
+            <div>
+              <h5 class="fw-bold">Choose Your Service</h5>
+              <p class="text-muted small">Select from our range of services and book a consultation. Booking a consultation with HealNet is fairly simple and straightforward.</p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-3">
+            <div class="badge rounded-circle bg-info text-white fs-5 p-3">3</div>
+            <div>
+              <h5 class="fw-bold">Meet Your Doctor</h5>
+              <p class="text-muted small">Have a virtual consultation with one of our certified specialists, or go for a physical visit to the doctor in case you opted for a physical check-up.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=500" alt="Doctor Consultation" class="img-fluid rounded-4 border border-info p-2 shadow-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-info fw-semibold">Patient Testimonials:</span>
+        <h2 class="fw-bold">Hear from Those We've Cared For</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4 border-0 rounded-4 shadow-sm bg-white h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100" class="rounded-circle" width="50" height="50" alt="Linda A.">
+              <p class="text-muted mb-0 small">"After my knee surgery, the convenience of online consultations made my recovery smoother than I could have imagined."</p>
+            </div>
+            <strong class="text-dark align-self-end">- Linda A.</strong>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-4 border-0 rounded-4 shadow-sm bg-white h-100">
+            <div class="d-flex align-items-center gap-3 mb-3">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100" class="rounded-circle" width="50" height="50" alt="Henry B.">
+              <p class="text-muted mb-0 small">"Managing chronic conditions like diabetes requires a lot of vigilance, but the medicine refill system has simplified my life."</p>
+            </div>
+            <strong class="text-dark align-self-end">- Henry B.</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="row text-center mt-5 gy-3">
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold text-info">10,000+</h2>
+          <small class="text-muted">Successful Consultations</small>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold text-info">2,500+</h2>
+          <small class="text-muted">Healthcare Professionals</small>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold text-info">98%</h2>
+          <small class="text-muted">Patient Satisfaction Rate</small>
+        </div>
+        <div class="col-6 col-md-3">
+          <h2 class="fw-bold text-info">200+</h2>
+          <small class="text-muted">Top Specialists</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doctors" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="text-info fw-semibold">Masters of Medicine:</span>
+        <h2 class="fw-bold">Meet our team of specialists</h2>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-lg-6">
+          <div class="card border-0 rounded-4 text-white overflow-hidden bg-info shadow">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5">
+                <img src="https://images.unsplash.com/photo-1594824813566-788530791a4d?q=80&w=400" class="img-fluid h-100 object-fit-cover" alt="Dr. Sarah Johnson">
+              </div>
+              <div class="col-md-7 p-4">
+                <h5 class="fw-bold">Dr. Sarah Johnson (Cardiologist)</h5>
+                <p class="small opacity-90">Heart health is Dr. Johnson's passion, and her approach to cardiology integrates cutting-edge technology with compassionate care.</p>
+                <a href="#booking" class="btn btn-light text-info fw-bold rounded-pill px-4">Book appointment <i class="fa-solid fa-chevron-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card border-0 rounded-4 text-white overflow-hidden bg-info shadow">
+            <div class="row g-0 align-items-center">
+              <div class="col-md-5">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400" class="img-fluid h-100 object-fit-cover" alt="Dr. Mark Lee">
+              </div>
+              <div class="col-md-7 p-4">
+                <h5 class="fw-bold">Dr. Mark Lee (Dermatologist)</h5>
+                <p class="small opacity-90">Dr. Lee is a visionary in dermatology, advancing treatments for skin health with a gentle, holistic approach.</p>
+                <a href="#booking" class="btn btn-light text-info fw-bold rounded-pill px-4">Book appointment <i class="fa-solid fa-chevron-right ms-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2">Reach our <span class="text-info">Help Desk</span> for support</h2>
+      <p class="text-muted mb-4">Questions? Need assistance? Our dedicated support team is here to help you every step of the way.</p>
+
+      <div class="card border-0 rounded-4 p-4 shadow-sm mx-auto max-w-800 bg-white">
+        <form class="row g-3">
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0"><i class="fa-regular fa-user text-muted"></i></span>
+              <input type="text" class="form-control border-start-0" placeholder="Enter Your First Name" required>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="input-group">
+              <span class="input-group-text bg-transparent border-end-0"><i class="fa-regular fa-envelope text-muted"></i></span>
+              <input type="email" class="form-control border-start-0" placeholder="Enter Your Email Address" required>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button type="submit" class="btn btn-info text-white w-100 rounded-3">Contact us <i class="fa-solid fa-chevron-right ms-1"></i></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white pt-5 pb-3 border-top">
+    <div class="container">
+      <div class="row gy-4 mb-4">
+        <div class="col-lg-4">
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary fs-4 mb-3" href="#">
+            <i class="fa-solid fa-heart-pulse text-info fs-3"></i> HealNet
+          </a>
+          <p class="text-muted small max-w-300">Experience personalized medical care from the comfort of your home.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="fw-bold text-info mb-3">Support</h6>
+          <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+            <li><a href="#" class="text-decoration-none text-muted">Getting Started</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">FAQS</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Help Articles</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Report an issue</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Contact Help Desk</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold text-info mb-3">Services</h6>
+          <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+            <li><a href="#" class="text-decoration-none text-muted">Booking appointments</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Online consultations</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Prescriptions</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Medicine Refills</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Medical Notes</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h6 class="fw-bold text-info mb-3">Legal</h6>
+          <ul class="list-unstyled small text-muted d-flex flex-column gap-2">
+            <li><a href="#" class="text-decoration-none text-muted">Terms & Conditions</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Cookie Notice</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Cookie Preferences</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Trust Center</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="text-muted">
+
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center gap-3">
+        <div class="d-flex gap-3 text-info">
+          <a href="#" class="text-info"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="text-info"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-info"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" class="text-info"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <small class="text-muted">HealNet 2026 © All Rights Reserved</small>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
